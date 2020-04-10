@@ -158,7 +158,7 @@ a:hover{
 	cursor: pointer;
     transition: .5s;
 
-    background: #1a2537;
+    /*background: #1a2537;**/
     display: flex;
     align-items: center;
     justify-content: center;
