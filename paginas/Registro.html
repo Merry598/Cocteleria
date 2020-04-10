@@ -3,22 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="../CSS/registro.css">
     <title>Registro</title>
 </head>
-<body>
+<body id="regist" >
     
+    <form id="idformulario">
+        <h1>Registro</h1>
+        <div class="contenedor">
+       
 
+            <div class="input-contenedor">
 
+                <i class="fas fa-user icon"></i>
+                <input type="text" name="nombre" placeholder="Nombre*" class="input__text" required onkeypress=" return soloLetras(event);" required="" pattern="[a-zA-Z]+">
+            </div>
 
+                <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" name="apellido" placeholder="Apellidos*" class="input__text"  required="" pattern="[a-zA-Z]+" >
+                </div>
+            
 
+                <div class="input-contenedor">
+                <i class="fas fa-address-card icon"></i>
+                <input type="text" name="cedula" placeholder="Cédula" class="input__text" required=""  pattern="[0-9]+">
+                </div>
 
+                <div class="input-contenedor">
+                <i class="fas fa-phone alt icon"></i>
+                <input type="text" name="num_telefono" placeholder="Número de Teléfono*" class="input__text"required=""  required onkeypress=" return SoloNumeros(event);"  pattern="[0-9]+">
+                </div>
+             
+                
+                <div class="input-contenedor">
+                <i class="fas fa-calendar-alt icon"></i>
+                <input type="date" name="fecha_nacimiento" placeholder="Fecha Nacimiento" class="input__text">
+                </div>
 
+                <div class="input-contenedor">
+                <i class="fas fa-sort-numeric-down icon"></i>
+                <input type="number" name="edad" placeholder="Edad" class="input__text" >
+                </div>
 
+                <div class="input-contenedor">
+                <i class="fas fa-flag icon"></i>
+                <input type="text" name="pais" placeholder="País" class="input__text" >
+                </div>
 
+                <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" name="email" placeholder="Email*" class="input__text" required="">
+                </div>
 
+                <div class="input-contenedor">
+                <i class="fas fa-passport icon"></i>
+                <input type="password" name="fecha_acordada" placeholder="PIN*" class="input__text" required="" maxlength="6"  required onkeypress=" return SoloNumeros(event);"  pattern="[0-9]+">
+                </div>
 
-      
+                <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" name="contrasenna" placeholder="Contraseña*" class="input__text" required="">
+                </div>
+
+                <div class="input-contenedor">
+                <i class="fas fa-lock icon"></i>  
+                <input type="password" name="confcontrasenna" placeholder="Confirmar Contraseña" class="input__text" required="">
+                </div>
+
+                <input type="submit" value="Registrarse" class="button">
+
+                <br><br>
+                <p>Al ser click en registrarse aceptas nuestros términos y condiciones.
+                <a class="link" href="Login.html">Login</a></p>
+            </div>
+            </form> 
    
      <script src="JS/app.js"> </script>
     

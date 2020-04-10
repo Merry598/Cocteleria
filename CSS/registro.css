@@ -1,0 +1,112 @@
+/***********Formulario de Registro****************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+#regist{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(../Imagenes/fondoregistro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+.contenedor {
+    width: 100%;
+    padding: 15px;
+    width: 100%; 
+    
+ }
+ #idformulario {
+    background: #fff;
+    width: 40%;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px  solid #333;
+    border-radius: 20px;
+
+  
+ }
+h1 {
+    text-align: center;
+    color: #1a2537;
+    font-size: 25px; 
+    margin-top: 5px;
+    font-family: 'Gotu', sans-serif;  
+}
+input[type="text"],
+input[type="password"] {
+  font-size: 16px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+}
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #1a2537; 
+    transition: border 1s ease;
+}
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+ }
+ .button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+   
+.button:hover {
+    background-color: cadetblue; 
+  
+}
+p{
+    text-align: center; 
+}
+.link {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+.link:hover {
+    color: cadetblue;
+}
+.btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color:#fff;
+    font-family: 'Gotu', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+    
+    background: #38d39f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+    
+
+          
