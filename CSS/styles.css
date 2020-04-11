@@ -256,6 +256,8 @@ margin-top: 20px;
     background:var(--blue) ;
 
 }
+
+
 @media only screen and (max-width:773px ){
     .img-header .welcome h1{
         font-size: 40px;
@@ -343,6 +345,8 @@ margin-top: 20px;
     cursor:pointer;
     transition: 0.5s;
 }
+
+
 .acerca-de .info-container .about-more button:hover{
     background: var(--blue);
 
