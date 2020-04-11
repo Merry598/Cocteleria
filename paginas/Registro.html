@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
     <link rel="stylesheet" href="../CSS/registro.css">
-    <title>Registro</title>
+    <title>Registro de Usuario</title>
 </head>
 <body>
     <header id="header">
@@ -18,97 +18,98 @@
 <!--Fondo con imagen-->
     <div class="portada"></div>
     <div class="capa">
-     
-<!--Formulario de Registro-->
-    <form id="idformulario">
-        <h1>Registro<i class="fas fa-cocktail icon"></i></h1> 
-        <div class="contenedor">
-       
 
-            <div class="input-contenedor">
+<!--Formulario de Registro de Usuarios-->
+ <div id="contenedora2">
+    <div id="ContRegistrarse">
+    <form id="frmRegistrarse" name="fdatos">
+    <table id="tbregistrar">
+    <tr>
+    <th colspan="2">Datos del Usuario</th>
+    </tr>
+    <tr>
 
-                <i class="fas fa-user icon"></i>
-                <input type="text" name="nombre" placeholder="Nombre*" class="input__text" required onkeypress=" return soloLetras(event);" required="" pattern="[a-zA-Z]+">
-            </div>
+     <td><i class="fas fa-user icon"></i>Nombre:</td>
+    <td> <input type="text" name="nombre"size="40"></td>
+    </tr>
+    <tr>
 
-                <div class="input-contenedor">
-                <i class="fas fa-user icon"></i>
-                <input type="text" name="apellido" placeholder="Apellidos*" class="input__text"  required="" pattern="[a-zA-Z]+" >
-                </div>
-            
+    <td> <i class="fas fa-user icon"></i>Apellidos:</td>
+    <td><input type="text" name="apellidos" size="40"></td>
+    </tr>
+    <tr>
 
-                <div class="input-contenedor">
-                <i class="fas fa-address-card icon"></i>
-                <input type="text" name="cedula" placeholder="Cédula" class="input__text" required=""  pattern="[0-9]+">
-                </div>
-
-                <div class="input-contenedor">
-                <i class="fas fa-phone alt icon"></i>
-                <input type="text" name="num_telefono" placeholder="Número de Teléfono*" class="input__text"required=""  required onkeypress=" return SoloNumeros(event);"  pattern="[0-9]+">
-                </div>
-             
-                
-                <div class="input-contenedor">
-                <i class="fas fa-calendar-alt icon"></i>
-                <input type="date" name="fecha_nacimiento" placeholder="Fecha Nacimiento" class="input__text">
-                </div>
-
-                <div class="input-contenedor">
-                <i class="fas fa-sort-numeric-down icon"></i>
-                <input type="number" name="edad" placeholder="Edad" class="input__text" >
-                </div>
-
-                <div class="input-contenedor">
-                <i class="fas fa-venus-mars icon"></i>
-                <label for="genero"></label>
-                <select id="genero">
-                <option value="M">Masculino</option>
-                <option value="M">Femenino</option>
-                </select>
-                </div>
+    <td><i class="far fa-id-badge icon"></i>Tipo de Do.Identidad</td>
+    <td><select name="ident" >
+    <option value="seleccion">Seleccione una Opción</option>
+    <option value="DNI">DNI</option>
+    </select></td>
+    </tr>
+    <tr>
     
+    <td><i class="fas fa-address-card icon"></i>Numero de Cédula:</td>
+    <td><input type="number" name="numid" size="40"></td>
+    </tr>
+    <tr>
+    
+    <td> <i class="fas fa-calendar-alt icon"></i>Fecha de Nacimiento:</td>
+    <td><input type="date" name="fechaNac" size="40"></td>
+    </tr>
+    <tr>
+    
+    <td><i class="fas fa-venus-mars icon"></i>Genéro</td>
+    <td><select name="genero" >
+    <option value="seleccion">Seleccione una Opción</option>
+    <option value="Genero">Masculino</option>
+    <option value="Genero">Femenino</option>
+    </select></td>
+    </tr>
+    <tr>
 
-                <div class="input-contenedor">
-                <i class="fas fa-flag icon"></i>
-                <input type="text" name="pais" placeholder="País" class="input__text" >
-                </div>
+    <td><i class="fas fa-flag icon"></i>País:</td>
+    <td><input type="text" name="pais" size="40"></td>
+    </tr>
+    <tr>
 
-                <div class="input-contenedor">
-                <i class="fas fa-envelope icon"></i>
-                <input type="text" name="email" placeholder="Email*" class="input__text" required="">
-                </div>
+    <td><i class="fas fa-map-marked-alt icon"></i>Dirección:</td>
+    <td><input type="text" name="direccion" size="40"></td>
+    </tr>
+    <tr>
+    
+    <td> <i class="fas fa-envelope icon"></i>E-mail:</td>
+    <td><input type="email" name="correo" size="40"></td>
+    </tr>
+    <tr>
 
-              <!--  <div class="input-contenedor">
-                <i class="fas fa-passport icon"></i>
-                <input type="password" name="fecha_acordada" placeholder="PIN*" class="input__text" required="" maxlength="6"  required onkeypress=" return SoloNumeros(event);"  pattern="[0-9]+">
-                </div>-->
-                
-                <div class="input-contenedor">
-                <i class="fas fa-key icon"></i>
-                <input type="password" name="contrasenna" placeholder="Contraseña*" class="input__text" required="">
-                </div>
+    <td><i class="fas fa-users icon"></i>Usuario:</td>
+    <td><input type="text" name="usuario" size="40"></td>
+    </tr>
+    <tr>
 
-                <div class="input-contenedor">
-                <i class="fas fa-lock icon"></i>  
-                <input type="password" name="confcontrasenna" placeholder="Confirmar Contraseña" class="input__text" required="">
-                </div>
+    <td><i class="fas fa-key icon"></i>Contraseña</td>
+    <td><input type="password" name="contra" size="40"></td>
+    </tr>
+    <tr>
 
-                <input type="submit" value="Registrarse" class="button">
+    <td><i class="fas fa-lock icon"></i>Confirmar Contraseña</td>
+    <td><input type="password" name="concontra" size="40"></td>
+    </tr>
+    <tr>
+    <td colspan="2">
+    <input id="botonRegistrar" type="button" value="Registrar" onclick="RegistrarUsuario()"></td>
+    </tr>
+    </table>
+</form>
+</div>
+</div>
 
-                <br><br>
-                <p>Al ser click en registrarse aceptas nuestros términos y condiciones.
-                <a class="link" href="Login.html">Login</a></p>
-            </div>
-            </form> 
-            
-        </div>
-    </div>
-    <footer id="footer-registre"></footer>
+     <!--<footer class="footer-registre"></footer>
     <div class="footer-text">
         <p>&copy; Coctelería - 2020 | info@cocteleria.com | Todos los derechos reservados.</p>
-    </div>
+    </div>-->
     
-     <script src="JS/app.js"> </script>
+     <script src="../JS/app.js"> </script>
+     <script src="../JS/funciones.js"></script>
     
 </body>
 </html>
