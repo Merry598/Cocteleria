@@ -8,21 +8,66 @@
     <title>Registro de Usuario</title>
 </head>
 <body>
-    <header id="header">
-
-            <div class="logo">
-                <h1><i class="fas fa-cocktail">Coctelería</i></h1>
-            </div>     
-    </header>
-
+   
 <!--Fondo con imagen-->
-    <div class="portada"></div>
+    <div class="portada">
     <div class="capa">
-
+    <div class="contenedor1">
+       
 <!--Formulario de Registro de Usuarios-->
- <div id="contenedora2">
-    <div id="ContRegistrarse">
-    <form id="frmRegistrarse" name="fdatos">
+<div class="cod-container">
+    <div class="form-header">
+        <img src="../Imagenes/Logo.png" alt="Logo de registro">
+       
+        <h1>Tu<span>Coctelería</span></h1>
+    </div>
+<div class="form-content">
+    <form action="#" class="cod-form">
+        <div class="form-title">
+            <h3>Registro de Usuarios</h3>
+        </div>
+        
+
+        <div class="input-group">
+            <input type="email" class="form-input" name="form-input" id="reg-correo">
+            <label class="label" for="reg-correo"> <i class="fas fa-envelope icon"></i>Correo</label>
+        </div>
+
+
+        <div class="input-group">
+            <input type="password" class="form-input" name="form-input" id="pass">
+            <label class="label" for="pass">  <i class="fas fa-key icon"></i>Contraseña</label>
+        </div>
+
+        <div class="input-group">
+          
+            <input type="password" class="form-input" name="form-input" id="reg-rep-pass">
+            <label class="label" for="reg-rep-pass"><i class="fas fa-lock icon"></i>Repetir Contraseña</label>
+            </div>
+
+        <div class="input-group">
+                
+            <input type="submit" class="form-input"  value="Registrarse" >
+            <p>Ya tienes cuenta? <a class="link" href="Login.html">Login</a></p>
+           
+            
+             </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+<script src="../JS/registro.js"></script>
+<script src="../JS/jquery-3.5.0.min.js"></script>
+
+</body>
+</html>
+    
+
+
+
+    <!--<div id="contRegistrarse">
+    <form id="contacto-frm" name="contacto_frm">
     <table id="tbregistrar">
     <tr>
     <th colspan="2">Datos del Usuario</th>
@@ -30,12 +75,12 @@
     <tr>
 
      <td><i class="fas fa-user icon"></i>Nombre:</td>
-    <td> <input type="text" name="nombre"size="40"></td>
+    <td> <input type="text" name="nombre" class="input__text" required onkeypress=" return soloLetras(event);" required="" pattern="[a-zA-Z]+"> </td>
     </tr>
     <tr>
 
     <td> <i class="fas fa-user icon"></i>Apellidos:</td>
-    <td><input type="text" name="apellidos" size="40"></td>
+    <td><input type="text" name="apellidos" class="input__text"  required="" pattern="[a-zA-Z]+"  ></td>
     </tr>
     <tr>
 
@@ -48,31 +93,34 @@
     <tr>
     
     <td><i class="fas fa-address-card icon"></i>Numero de Cédula:</td>
-    <td><input type="number" name="numid" size="40"></td>
+    <td><input type="number" name="numID" class="input__text" required=""  pattern="[0-9]+"></td>
     </tr>
     <tr>
     
     <td> <i class="fas fa-calendar-alt icon"></i>Fecha de Nacimiento:</td>
-    <td><input type="date" name="fechaNac" size="40"></td>
+    <td><input type="date" name="fechaNac" class="input__text" ></td>
     </tr>
     <tr>
     
     <td><i class="fas fa-venus-mars icon"></i>Genéro</td>
-    <td><select name="genero" >
-    <option value="seleccion">Seleccione una Opción</option>
-    <option value="Genero">Masculino</option>
-    <option value="Genero">Femenino</option>
-    </select></td>
+    <td>
+    <input type="radio" name="M" name="sexo_rdo" value="M">Masculino
+    <input type="radio" name="F" name="sexo_rdo" value="F">Femenino</td>
+    </tr>
+    <tr>
+
+    <td>  <i class="fas fa-phone alt icon"></i>Número de Teléfono:</td>
+    <td><input type="text" name="numtel" class="input__text"required=""  required onkeypress=" return SoloNumeros(event);"  pattern="[0-9]+"></td>
     </tr>
     <tr>
 
     <td><i class="fas fa-flag icon"></i>País:</td>
-    <td><input type="text" name="pais" size="40"></td>
+    <td><input type="text" name="pais"  class="input__text" required onkeypress=" return soloLetras(event);" required="" pattern="[a-zA-Z]+"></td>
     </tr>
     <tr>
 
     <td><i class="fas fa-map-marked-alt icon"></i>Dirección:</td>
-    <td><input type="text" name="direccion" size="40"></td>
+    <td><input type="text" name="direccion"  class="input__text" required="" ></td>
     </tr>
     <tr>
     
@@ -82,34 +130,38 @@
     <tr>
 
     <td><i class="fas fa-users icon"></i>Usuario:</td>
-    <td><input type="text" name="usuario" size="40"></td>
+    <td><input type="text" name="usuario"  class="input__text" required="" ></td>
     </tr>
     <tr>
 
     <td><i class="fas fa-key icon"></i>Contraseña</td>
-    <td><input type="password" name="contra" size="40"></td>
+    <td><input type="password" name="contra" class="input__text" required=""></td>
     </tr>
     <tr>
 
     <td><i class="fas fa-lock icon"></i>Confirmar Contraseña</td>
-    <td><input type="password" name="concontra" size="40"></td>
+    <td><input type="password" name="concontra" class="input__text" required=""></td>
     </tr>
     <tr>
     <td colspan="2">
-    <input id="botonRegistrar" type="button" value="Registrar" onclick="RegistrarUsuario()"></td>
+        <input type="button" id="botonRegistrar"  value="Registrar"   onclick="RegistrarUsuario()"></td>
+    
     </tr>
+
+    <th colspan="2">
+        <p>Al ser click en registrarse aceptas nuestros términos y condiciones.
+        <a class="link" href="Login.html">Login</a></p></th>
     </table>
 </form>
 </div>
-</div>
+</div>-->
+
 
      <!--<footer class="footer-registre"></footer>
     <div class="footer-text">
         <p>&copy; Coctelería - 2020 | info@cocteleria.com | Todos los derechos reservados.</p>
     </div>-->
     
-     <script src="../JS/app.js"> </script>
-     <script src="../JS/funciones.js"></script>
-    
-</body>
-</html>
+    <!-- <script src="../JS/app.js"> </script>
+    <script src="../JS/funciones.js"></script>-->
+   
