@@ -25,7 +25,7 @@ btnMenu.addEventListener('click', (event) => {
    
    });
 
-   // Add class "active"
+   // Add class "active-El menu cuando se mimimiza la pantalla"
 let enlaces = document.querySelectorAll('.lists li a');
 
 enlaces.forEach((element) => {
