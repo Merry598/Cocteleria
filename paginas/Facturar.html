@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="../CSS/facturar.css">
+    <title>Pago</title>
+</head>
+<body>
+    
+<!--Menu de Navegación-->
+<header id="header">
+
+    <nav class="menu">
+       
+        <div class="logo-box">
+         
+            <h1><i class="fas fa-cocktail">Coctelería</i></h1>
+            <span class="btn-menu"><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="list-container">
+            <ul class="lists">
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="../paginas/login.html">Login</a></li>
+                <li><a href="../paginas/Registro.html">Registro</a></li>
+                <li><a href="../Paginas/Productos.html">Productos</a></li>
+                <li><a href="../Paginas/Facturar.html">Facturar</a></li>
+                <li><a href="#">Nosotros</a></li>
+               <li><a href="#">Servicios</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--Tabla de Pago Cliente-->
+    <div id="contenedor">
+    <div id="contenedora4">
+        <div id="ContPago">
+            <form id="frmPago" name="fdatos">
+                    <h2>Pague ahora con tarjeta de crédito o de débito</h2>
+                <table id="tbpago">
+                  
+                  <tr>
+                      <td><i class="fas fa-map-marked-alt icon"></i>Local</td>
+                      <td>
+                          <select name="selecpa" >
+                         <option value="">Seleccione un local</option>
+                          <option value="">Santa Ana</option>
+                          <option value="">Zarcero</option>
+                          <option value="">San Carlos</option>
+                          <option value="">La Fortuna</option>
+                          
+                          </select>
+                      </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fas fa-address-card icon"></i>Número de Cédula:</td>
+                    <td><input type="number" name="numID"></td>
+                    </tr>
+                    <tr>
+
+                    <tr>
+                        <td><i class="fas fa-user icon"></i>Nombre y Apellidos</td>
+                        <td><input type="text" name="nombre"></td>
+                    </tr>
+                    <tr> 
+                        
+                    <tr>
+                        <td><i class="fas fa-venus-mars icon"></i>Genéro</td>
+                        <td>
+                        <input type="radio" name="M" name="sexo_rdo" value="M">Masculino
+                        <input type="radio" name="F" name="sexo_rdo" value="F">Femenino</td>
+                    </tr>
+                    <tr>   
+                        
+                    <tr>
+                      <td><i class="fas fa-phone alt icon"></i>Número de teléfono </td>
+                      <td><input type="number" name="numtel"></td>
+                    </tr>
+                 
+                    <tr>
+                    <td><i class="fas fa-envelope icon"></i>Correo Electrónico</td>
+                    <td><input type="text" name="correo"></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fab fa-cc-amazon-pay icon"></i>El Pago es</td>
+                        <td>
+                        <input type="radio" name="E" name="pago_rdo" value="E">En Efectivo
+                        <input type="radio" name="T" name="pago_rdo" value="T">Con Tarjeta</td>
+                    </tr>
+                    <tr>   
+
+                    <tr>
+                        <td colspan="3"><img src="../Imagenes/medpa.png" alt=""></td>
+                     </tr>
+
+                    <tr>
+                      <td><i class="far fa-credit-card icon"></i>Número de Tarjeta</td>
+                      <td><input type="number" name="numtarjeta"></td>
+                    </tr>
+
+                    <tr>
+                      <td><i class="fas fa-credit-card icon"></i>Fecha de vencimiento</td>
+                      <td><input type="date" name="fechaVenc"></td>
+                    </tr>
+
+                    <tr>
+                      <td><i class="far fa-credit-card icon"></i>Código de validación</td>
+                      <td><input type="number" name="codValid"></td>
+                     
+                  </tr>
+                 
+                </table>
+                <input type="button" id="botonpagar" onclick="validarPago()" value="PAGAR">
+            </form>
+
+        </div>
+    </div> 
+</div>
+
+<script src="../JS/facturar.js"></script>
+</body>
+</html>
