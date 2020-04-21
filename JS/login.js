@@ -1,4 +1,4 @@
-//Animación label
+//Animación label javascript
 
 const inputs = document.querySelectorAll(".input");
 
@@ -14,7 +14,6 @@ function remcl(){
 		parent.classList.remove("focus");
 	}
 }
-
 
 inputs.forEach(input => {
 	input.addEventListener("focus", addcl);

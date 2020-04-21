@@ -1,3 +1,4 @@
+//Darle animación al form con jQuery
 (function(){
     $(document).ready(function(){
         $('.alt-form').click(function(){

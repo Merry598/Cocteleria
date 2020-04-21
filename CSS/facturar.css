@@ -21,12 +21,20 @@ body{
     animation: movimiento 15s infinite linear alternate;
     background-repeat: no-repeat;
     background-size: 100%;
-  
+    overflow: hidden;
   
 }
 .portada{
-    width: 100%;
+   width: 100%;
     height: 500px;
+
+}
+.capa{
+    width: 500%;
+    height: 1000%;
+   
+    background: rgba(93, 155, 144, 0.6);  
+  
 }
 
 @keyframes movimiento{
@@ -37,19 +45,10 @@ body{
         background-position: top right;
     }
 }
-.capa{
-    width: 500%;
-    height: 1000%;
-    background: rgba(93, 155, 144, 0.6);  
-  
-}
-.contenedor1{
-    margin-left: 400px;
-  
-}
+
 /*********Finalización de Animación****/
 
-/*****************************Menu de Navegación*******/
+/**********************Menu de Navegación*******/
 #header{
     position: relative;
     width: 100%;
@@ -168,23 +167,14 @@ display: flex;
 
 /****************Finalización Menu de Navegación*****/
 
-/**Formato de la tabla**/
-#contenedor {
-   height: 500px;
+/********Formato de la tabla*******/
+#contenedora4 {
+    width: 800px;
+    height: 500px;
     margin-top: 10px;
     margin-inline-start: 15px;
-   background-color: var(--white);
+    background-image: url(../Imagenes/registro2.jpg); 
     border-radius: 20px;  
-   background: rgba(93, 155, 144, 0.6);
-}
-#contenedora4 {
-   
-    height: 500px;
-    margin-top: 5px;
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 15px;
 }
 #frmPago td img {
     width: 390px;
@@ -197,10 +187,7 @@ display: flex;
     margin-top: 100px;
     margin-left: 100px;
     padding: 10px;
-    box-shadow: #000000;
-    
-        
-    
+    box-shadow: #000000;   
 }
 h2{
     margin-left: 50px;
@@ -229,7 +216,7 @@ h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+/****Formato Iconos***/
 .icon {
     min-width: 50px;
     text-align: center;
