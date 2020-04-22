@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-    <link rel="stylesheet" href="../CSS/facturar.css">
-    <title>Facturar</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="../CSS/pago.css">
+    <title>Pago</title>
 </head>
 <body>
-    <!--Audio fondo-->
-     <embed src="../audio/audio.mp3" autostart="false" loop="true" width="1" height="1"></bgsound>
-
+    
 
     <!--Fondo con imagen-->
     <div class="portada">
@@ -32,9 +30,12 @@
                 <li><a href="../index.html" class="active">Inicio</a></li>
                 <li><a href="../paginas/login.html">Login</a></li>
                 <li><a href="../paginas/Registro.html">Registro</a></li>
+                <li><a href="../paginas/Compra.html">Compra</a></li>
+                <li><a href="../Paginas/Pago.html">Pago</a></li>
+                <li><a href="../Paginas/Inventario.html">Inventario</a></li>
                 <li><a href="../Paginas/Galeria.html">Galeria</a></li>
-                <li><a href="../Paginas/Facturar.html">Facturar</a></li>
                 <li><a href="../Paginas/Servicios.html">Servicios</a></li>
+                
                 <li><a href="#">Nosotros</a></li>
                
                <li><a href="#">Blog</a></li>
@@ -55,7 +56,7 @@
                   <tr>
                       <td><i class="fas fa-map-marked-alt icon"></i>Local</td>
                       <td>
-                          <select name="selecpa" >
+                          <select name="selecloc" >
                          <option value="">Seleccione un local</option>
                           <option value="">Santa Ana</option>
                           <option value="">Zarcero</option>
@@ -68,7 +69,7 @@
 
                   <tr>
                     <td><i class="fas fa-address-card icon"></i>Número de Cédula:</td>
-                    <td><input type="number" name="numID"></td>
+                    <td><input type="number" name="numid"></td>
                     </tr>
                     <tr>
 
@@ -81,8 +82,8 @@
                     <tr>
                         <td><i class="fas fa-venus-mars icon"></i>Genéro</td>
                         <td>
-                        <input type="radio" name="M" name="sexo_rdo" value="M">Masculino
-                        <input type="radio" name="F" name="sexo_rdo" value="F">Femenino</td>
+                        <input type="radio" id="M" name="sexo_rdo" value="M">Masculino
+                        <input type="radio" id="F" name="sexo_rdo" value="F">Femenino</td>
                     </tr>
                     <tr>   
                         
@@ -132,6 +133,6 @@
     </div> 
 </div>
 
-<script src="../JS/facturar.js"></script>
+<script src="../JS/pago.js"></script>
 </body>
 </html>

@@ -61,5 +61,36 @@ enlaces.forEach((element) => {
 
 });
 
+// Validar Usuario Login
+function validarUsuario(){
+  var usuario,contrasena;
+
+  usuario=document.fdatos.nombre.value;
+  contrasena=document.fdatos.contrasena.value
+ 
+  if(usuario==""){
+      alert("Tiene que escribir el usuario");
+      document.fdatos.nombre.focus();
+      return 0;
+  }
+  if(contrasena==""){
+      alert("Tiene que escribir la contraseña");
+      document.fdatos.contra.focus();
+      return 0;
+  }
+
+  if(usuario!="Maria" && contrasena!="123"){
+      alert("Usuario o contraseña incorrecto");
+      return 0;
+  }else{
+
+      alert("Bienvenido");
+      document.fdatos.nombre.value="";
+      document.fdatos.nombre.value="";
+      document.fdatos.submit();
+  }
+  
+
+}
 
 
