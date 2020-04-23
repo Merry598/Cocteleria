@@ -20,7 +20,7 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
 
-//Navegacion Menu
+//Menu de Navegación
 let btnMenu = document.querySelector('.btn-menu');
 let barIconX = document.querySelector('.btn-menu i');
 let menu = document.querySelector('.list-container');

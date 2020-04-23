@@ -1,14 +1,30 @@
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  font-family: Lato, sans-serif;
-  background-image: url(../Imagenes/fondoregistro.jpg);
-
+:root{
+  --red: #ff2e63;
+  --black:#252a34;
+  --blue:#08d9d6;
+  --white:#eaeaea;
   
 }
 
- /*****************************Menu de Navegación*******/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;   
+
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Lato, sans-serif;
+ background-image: url(../Imagenes/fondoregistro.jpg);
+
+}
+
+ #header3{
+  background:#343a40;  
+ }
+/*****************************Menu de Navegación*******/
 #header{
   position: relative;
   width: 100%;
@@ -126,4 +142,5 @@ display: flex;
 }
 
 /****************Finalización Menu de Navegación*****/
+
 

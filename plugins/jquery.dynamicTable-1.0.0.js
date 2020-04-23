@@ -1,15 +1,4 @@
-﻿/**
- * @name        jquery.dynamicTable-1.0.0.js
- * @author      Dinesh Maind
- * @version     1.0.0
- * @date        2017-08-04
- * @copyright   (c) 2016 Dinesh Maind
- * @licence     Open Licence
- * @homepage
- * @example
- */
-
-; (function($) {
+﻿; (function($) {
     'use strict';
 
     $.fn.dynamicTable = function(options) {

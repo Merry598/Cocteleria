@@ -26,11 +26,11 @@ body {
     background-attachment: fixed; 
    
     /**Animación HTML Y CSS del fondo imagen incluye también .portada y .capa**/
-   animation: movimiento 15s infinite linear alternate;
+    animation: movimiento 15s infinite linear alternate;
     background-repeat: no-repeat;
     background-size: 100%;   
     z-index: 1000;
-   overflow: hidden;
+    overflow: hidden;
 }
 .portada{
     width: 100%;
@@ -56,7 +56,6 @@ body {
   
 }
 /*********Finalización de Animación****/
-
 
 
 /*****************************Menu de Navegación*******/
@@ -186,7 +185,7 @@ display: flex;
     
 }
 
-/**Formato Titulo TuCocteleria**/
+/**Formato Titulo Cocktail Boys**/
 .form-header {
    background: black;
     text-align: center;

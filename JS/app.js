@@ -7,7 +7,7 @@ var activador = true;
 
 btnMenu.addEventListener('click', (event) => {
 
-    //Icon X
+    //Icon X animacion del menu
     barIconX.classList.toggle('fa-times');
 
     if(activador){
@@ -25,7 +25,7 @@ btnMenu.addEventListener('click', (event) => {
    
    });
 
-   // Add class "active-El menu cuando se mimimiza la pantalla"
+   // Add class "active-Enlace del menu cuando se mimimiza la pantalla"
 let enlaces = document.querySelectorAll('.lists li a');
 
 enlaces.forEach((element) => {
@@ -47,7 +47,7 @@ let goTop = document.querySelector('.go-top');
 
 window.onscroll = () => {
 
- //Hide & Show - Scroll Menu (Function)
+ //(Function)ocultar & mostrar el menu al hacer Scroll  
  let currentScrollPos = window.pageYOffset;
 
  if (prevScrollPos > currentScrollPos) {
@@ -59,9 +59,9 @@ window.onscroll = () => {
  }
  prevScrollPos = currentScrollPos;
 
- //Scoll Menu & Go Top & See Down (Styles)
+ //Ir arriba & ver abajo  (Styles)
  let arriba = window.pageYOffset;
-//Conditions
+//Conditiones
 if(arriba <= 600){
     menuContent.style.borderBottom = 'none';
 

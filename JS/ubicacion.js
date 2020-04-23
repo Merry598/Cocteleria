@@ -7,7 +7,7 @@ var activador = true;
 
 btnMenu.addEventListener('click', (event) => {
 
-    //Icon X
+    //Icon X animacion del menu
     barIconX.classList.toggle('fa-times');
 
     if(activador){
@@ -21,12 +21,11 @@ btnMenu.addEventListener('click', (event) => {
        menu.style.left = '-100%';
    
        activador = true;
-   
       }
    
    });
-   
-// Add class "active-El menu cuando se mimimiza la pantalla"
+
+   // Add class "active-Enlace del menu cuando se mimimiza la pantalla"
 let enlaces = document.querySelectorAll('.lists li a');
 
 enlaces.forEach((element) => {
@@ -40,12 +39,4 @@ enlaces.forEach((element) => {
   });
 
 });
-
-function redireccionar(){
-
-  document.fdatos.submit();
-}
-
-
-
 
