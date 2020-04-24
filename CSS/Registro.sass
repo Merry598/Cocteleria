@@ -1,0 +1,317 @@
+$red:  #ff2e63
+$black: #252a34
+$blue: #08d9d6
+$white: #eaeaea
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body 
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: Arial
+    margin: 0
+    background: url(../Imagenes/fondoCoctel.jpg)
+    background-size:cover 
+    background-attachment: fixed
+    animation: movimiento 15s infinite linear alternate
+    background-repeat: no-repeat
+    background-size: 100% 
+    z-index: 1000
+    overflow: hidden
+
+.portada
+    width: 100%
+    height: 500px
+
+@keyframes movimiento
+    from
+        background-position: bottom left
+    
+    to
+        background-position: top right
+    
+.capa
+    width: 500%
+    height: 1000%
+    background: rgba(93, 155, 144, 0.6)  
+  
+.contenedor1
+    margin-left: 400px
+  
+/*********Finalización de Animación****/
+/*****************************Menu de Navegación*******/
+
+#header
+    position: relative
+    width: 100%
+
+.menu
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 60px
+    background: #08d9d6
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 9999
+
+.menu .logo-box
+    margin-left: 20px
+
+.menu .logo-box h1 a
+    text-decoration: none
+    font-size: 35px
+    font-weight: 400
+    color: var(--black)
+
+.menu .list-container
+    margin-right: 20px
+
+.menu .list-container ul
+    display: flex
+
+.menu .list-container ul li
+    list-style: none
+
+.menu .list-container ul li a
+    text-decoration: none
+    margin: 0px 10px
+    padding: 8px
+    color: var(--black)
+    border-radius: 24px
+    font-size: 16px
+    transition: 0.3s
+
+.menu .list-container ul li a.active
+    background: var(--red)
+    color: #fff
+
+.menu .list-container ul li a:hover
+    background: var(--red)
+    color: #fff
+
+.btn-menu > .fa-bars
+    display: none
+
+@media only screen and (max-width:900px)
+    .btn-menu > .fa-bars
+        display: block
+        position:absolute
+        right: 30px
+        top: 20px
+        font-size: 28px
+        color: var(--black)
+        transition: 0.5s
+        cursor: pointer
+    
+    .btn-menu > .fa-times
+        color: var(--red)
+    
+    .btn-menu > .fa-bars:hover
+        color:var(--red)
+    
+    .menu .logo-box
+        margin-left: 30px
+    
+    .menu .list-container
+        position: fixed
+        top: 60px
+        left: -100%
+        background: #fff
+        width: 100%
+        height: calc(100vh - 60px)
+    
+    .menu .list-container .lists
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        border-top: 4px solid var(--red)
+    
+    .menu .list-container ul li
+        width: 90%
+        border-bottom: 2px solid var(--black)
+        display: flex
+        justify-content: center
+    
+    .menu .list-container ul li a
+        font-size: 20px
+        text-align: center
+        padding: 12px 0px
+    
+    .menu .list-container ul li a.active
+        background: none
+        color: var(--red)
+    
+    .menu .list-container ul li a:hover
+        background: none
+        color: var(--red)
+    
+/****************Finalización Menu de Navegación*****/
+
+.cod-container 
+    background: #fff
+    width: 380px
+    border-radius: 10px
+    overflow: hidden
+
+/**Formato Titulo Cocktail Boys**/
+
+.form-header 
+    background: black
+    text-align: center
+    padding: 30px 0 40px
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%)
+
+.form-header img 
+    vertical-align: top
+    width: 40px
+
+.form-header h1 
+    color: #fff
+    font-family: AbeeZee
+    font-weight: normal
+    margin-top: 5px
+
+.form-header span 
+    color: #FF3D00
+
+.cod-form 
+    padding: 10px 40px 40px
+
+.form-title 
+    text-align: center
+    text-transform: uppercase
+    font-weight: normal
+    margin-bottom: 32px
+    overflow: hidden
+    font-family: AbeeZee
+    color: #FF3D00
+
+h3 
+    position: relative
+    display: inline-block
+    color: #FF3D00
+    padding: 0 10px
+
+h3::after,
+h3::before 
+    position: absolute
+    content: ''
+    width: 100%
+    height: 3px
+    background: #021e26
+    top: 0.5em
+
+h3::after 
+    left: 100%
+
+h3::before 
+    right: 100%
+
+.cod-form 
+    width: 100%
+    height: auto
+    text-align: center
+
+.input-group 
+    position: relative
+    margin-bottom: 40px
+
+input[type="email"],
+input[type="password"] 
+    border: none
+    border-bottom: 2px solid #021e26
+    width: 100%
+    outline: none
+    font-size: 14px
+    color: #021e26
+    padding-left: 10px
+    font-family: AbeeZee
+
+.label 
+    position: absolute
+    top: 0
+    left: 0
+    font-size: 14px
+    color: #FF3D00
+    padding-left: 10px
+    cursor: text
+    transition: all .3s ease
+    font-family: AbeeZee
+
+.form-input:focus + label 
+    top: -14px
+    font-size: 12px
+    color: #666565
+    font-family: AbeeZee
+
+.active 
+    top: -14px
+    font-size: 12px
+    color: #666565
+
+.error 
+    color: #FF0000
+
+input[type="submit"] 
+    background: none
+    border: none
+    background: #FF3D00
+    color: #fff
+    width: 100%
+    font-size: 14px
+    padding: 10px 0
+    font-family: AbeeZee
+    margin-bottom: 16px
+    border-radius: 10px
+    transition: all .5s ease
+
+input[type="submit"]:hover 
+    background: #021E26
+
+.input-group > p 
+    color: #FF3D00
+    text-align: center
+    font-size: 14px
+    font-family: AbeeZee
+
+.input-group p > a 
+    text-decoration: none
+    color: #039BE5
+
+.input-group p > a:hover 
+    text-decoration: underline
+
+.form-content 
+    display: none
+
+.form-content:nth-child(2) 
+    display: block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
